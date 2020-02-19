@@ -8,7 +8,7 @@ defmodule BobWeb.FormLiveTest do
   Hints:
 
     * path to the LiveView: `Routes.live_path(@endpoint, FormLive)`
-    * static test: `html = conn |> get(path) |> html_reponse(200)`
+    * static test: `html = conn |> get(path) |> html_response(200)`
     * live test: `{:ok, view, _html} = live(conn, path)`
     * `render_*` sends events
     * `Floki.parse_document!(html) |> Floki.find(selector)`
@@ -25,6 +25,8 @@ defmodule BobWeb.FormLiveTest do
     test "renders an error when email is invalid"
 
     test "renders an error when email is not present"
+
+    test "renders an error when email is in use"
 
     test "creates a user when form is valid"
   end

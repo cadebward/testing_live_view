@@ -43,7 +43,7 @@ defmodule Bob.MixProject do
       {:phoenix_ecto, "~> 4.1"},
       {:phoenix_live_view, "~> 0.7.0"},
       {:floki, ">= 0.0.0", only: :test},
-      {:mix_test_watch, "~> 1.0", only: :test}
+      {:mix_test_watch, "~> 1.0", only: :dev, runtime: false}
     ]
   end
 end
